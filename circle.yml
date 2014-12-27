@@ -1,7 +1,0 @@
-machine:
-  ruby:
-    version: 2.1.4
-
-test:
-  override:
-    - rake spec
