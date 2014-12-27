@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'optparse'
+require 'redpen_ruby'
+
+args = ARGV
+
+options = OptionParser.new do |opts|
+  opts.banner = "Usage: #{opts.program_name} /path/to/config.xml /path/to/target"
+  opts.separator ""
+  opts.separator "Common options:"
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+  opts.on_tail("--version", "Show version") do
+    puts RedpenRuby::VERSION
+    exit
+  end
+end
+
+args = ['-h'] if args.empty?
+options.parse!(args)
+
+config = args.shift.strip
+unless config
+  puts "You must provide an config file"
+  exit
+end
+
+target = args.shift.strip
+unless target
+  puts "You must provide an target file"
+  exit
+end
+
+print "\nChecking...."
+validation = RedpenRuby.check(config, target)
+
+if validation.valid?
+  puts "Congratulations! This is a valid document. Checking by RedPen CLI v#{validation.redpen_version}"
+  puts
+  puts validation.messages
+else
+  puts "FAILED!"
+  puts
+  puts "This is not a valid document. Checking by RedPen CLI v#{validation.redpen_version}"
+  puts
+  puts validation.messages
+end
