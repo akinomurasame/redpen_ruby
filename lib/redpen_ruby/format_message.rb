@@ -3,10 +3,9 @@ module RedpenRuby
     attr_reader :error_status, :message_list, :redpen_version
     private :error_status, :message_list
 
-    def initialize(raw_message)
+    def initialize(raw_message, version)
       @message_list = raw_message.split(/\n/)
-
-      @redpen_version = "1.0.1"
+      @redpen_version = version
       @error_status = get_error_status
 
       remove_unneeded_messages
