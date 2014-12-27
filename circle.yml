@@ -3,4 +3,5 @@ machine:
     version: 2.1.4
 
 test:
-  override: rake spec
+  override:
+    - rake spec
