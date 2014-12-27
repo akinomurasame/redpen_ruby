@@ -1,4 +1,4 @@
-# RedpenRuby
+# RedpenRuby [![Build Status](https://travis-ci.org/akinomurasame/redpen_ruby.svg?branch=travis-ci)](https://travis-ci.org/akinomurasame/redpen_ruby)
 
 RedpenRuby is a Ruby wrapper for [redpen: a text inspection tool](https://github.com/recruit-tech/redpen).
 
