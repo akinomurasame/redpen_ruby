@@ -1,6 +1,6 @@
 # RedpenRuby
 
-Ruby wrapper for redpen: a text inspection tool.
+RedpenRuby is a Ruby wrapper for [redpen: a text inspection tool](https://github.com/recruit-tech/redpen).
 
 ## Installation
 
@@ -12,7 +12,7 @@ gem 'redpen_ruby'
 
 And then execute:
 
-    $ bundle
+    $ bundle install --path vendor/bundle --binstubs vendor/bundle/bin
 
 Or install it yourself as:
 
@@ -20,7 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-    $ redpen_ruby /path/to/config.xml /path/to/target_file
+Usage CLI:
+
+    $ bundle exec redpen_ruby /path/to/config.xml /path/to/target_file
+
+Usage Ruby script:
+
+```ruby
+require 'redpen_ruby'
+
+config_file = './lib/redpen-cli-1.0/conf/redpen-conf-en.xml'
+target_file = './lib/redpen-cli-1.0/sample-doc/en/sampledoc-en.md'
+
+redpen = RedpenRuby.check(config, target)
+
+if redpen.valid?
+  puts 'Ok, Valid!'
+else
+  puts redpen.messages
+end
+```
 
 ## Contributing
 
