@@ -7,5 +7,9 @@ module RedpenRuby
       result = message.valid?
       expect(result).to be false
     end
+    it 'redpen version is correct' do
+      message = FormatMessage.new('aaa', '1.0.1')
+      expect(message.version).to eq '1.0.1'
+    end
   end
 end

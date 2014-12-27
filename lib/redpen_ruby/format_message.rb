@@ -20,6 +20,10 @@ module RedpenRuby
       message_list
     end
 
+    def version
+      redpen_version
+    end
+
   private
 
     def get_error_status
