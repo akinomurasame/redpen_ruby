@@ -1,6 +1,6 @@
 # RedpenRuby
 
-TODO: Write a gem description
+Ruby wrapper for redpen: a text inspection tool.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ redpen_ruby /path/to/config.xml /path/to/target_file
 
 ## Contributing
 

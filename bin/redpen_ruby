@@ -9,7 +9,7 @@ require 'redpen_ruby'
 args = ARGV
 
 options = OptionParser.new do |opts|
-  opts.banner = "Usage: #{opts.program_name} /path/to/config.xml /path/to/target"
+  opts.banner = "Usage: #{opts.program_name} /path/to/config.xml /path/to/target_file"
   opts.separator ""
   opts.separator "Common options:"
 
