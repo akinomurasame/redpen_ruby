@@ -32,7 +32,7 @@ require 'redpen_ruby'
 config_file = './lib/redpen-cli-1.0/conf/redpen-conf-en.xml'
 target_file = './lib/redpen-cli-1.0/sample-doc/en/sampledoc-en.md'
 
-redpen = RedpenRuby.check(config, target)
+redpen = RedpenRuby.check(config_file, target_file)
 
 if redpen.valid?
   puts 'Ok, Valid!'
