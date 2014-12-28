@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Akino Murasame"]
   spec.email         = ["akino.murasame@gmail.com"]
   spec.summary       = %q{Ruby wrapper for redpen: a text inspection tool.}
-  spec.description   = %q{RedPen Ruby is a Ruby wrapper for redpen: a text inspection tool.}
+  spec.description   = %q{RedPenRuby is a Ruby wrapper for redpen: a text inspection tool.}
   spec.homepage      = "https://github.com/akinomurasame/redpen_ruby"
   spec.license       = "MIT"
 
