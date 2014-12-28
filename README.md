@@ -1,10 +1,10 @@
 # RedpenRuby
 
+[![Gem Version](https://badge.fury.io/rb/redpen_ruby.svg)](http://badge.fury.io/rb/redpen_ruby)
 [![Build Status](https://travis-ci.org/akinomurasame/redpen_ruby.svg?branch=travis-ci)](https://travis-ci.org/akinomurasame/redpen_ruby)
 [![Coverage Status](https://coveralls.io/repos/akinomurasame/redpen_ruby/badge.png?branch=coveralls)](https://coveralls.io/r/akinomurasame/redpen_ruby?branch=coveralls)
 [![Code Climate](https://codeclimate.com/github/akinomurasame/redpen_ruby/badges/gpa.svg)](https://codeclimate.com/github/akinomurasame/redpen_ruby)
 [![Test Coverage](https://codeclimate.com/github/akinomurasame/redpen_ruby/badges/coverage.svg)](https://codeclimate.com/github/akinomurasame/redpen_ruby)
-
 
 RedpenRuby is a Ruby wrapper for [redpen: a text inspection tool](https://github.com/recruit-tech/redpen).
 
