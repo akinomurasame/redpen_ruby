@@ -7,7 +7,21 @@ module RedpenRuby
       result = message.valid?
       expect(result).to be false
     end
-    it 'redpen version is correct' do
+    it 'does not include "ValidationError" should be true' do
+      message = FormatMessage.new("aaa", "1.0.1")
+      result = message.valid?
+      expect(result).to be true
+    end
+    it 'does not include "ValidationError" should be true' do
+      message = FormatMessage.new("aaa", "1.0.1")
+      result = message.valid?
+      expect(result).to be true
+    end
+    it 'message is correct' do
+      message = FormatMessage.new('aaa', '1.0.1')
+      expect(message.messages).to eq ['aaa']
+    end
+    it 'version is correct' do
       message = FormatMessage.new('aaa', '1.0.1')
       expect(message.version).to eq '1.0.1'
     end

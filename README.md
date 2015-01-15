@@ -34,8 +34,8 @@ Usage Ruby script:
 ```ruby
 require 'redpen_ruby'
 
-config_file = './lib/redpen-cli-1.0/conf/redpen-conf-en.xml'
-target_file = './lib/redpen-cli-1.0/sample-doc/en/sampledoc-en.md'
+config_file = './lib/redpen-cli-1.1/conf/redpen-conf-en.xml'
+target_file = './lib/redpen-cli-1.1/sample-doc/en/sampledoc-en.md'
 
 redpen = RedpenRuby.check(config_file, target_file)
 
