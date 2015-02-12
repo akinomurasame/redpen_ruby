@@ -34,7 +34,7 @@ module RedpenRuby
     end
 
     def remove_unneeded_messages
-      message_list.delete_if { |msg| msg.match(/\A[0-9]+:[0-9]+:[0-9]+\.[0-9]+ \[main\].*\Z/) }
+      message_list.delete_if { |msg| msg.match(/\A\[[0-9]+-[0-9]+-[0-9]+ [0-9]+:[0-9]+:[0-9]+\.[0-9]+\].*\Z/) }
     end
   end
 end
