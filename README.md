@@ -37,7 +37,7 @@ require 'redpen_ruby'
 config_file = './lib/redpen-cli-1.1/conf/redpen-conf-en.xml'
 target_file = './lib/redpen-cli-1.1/sample-doc/en/sampledoc-en.md'
 
-redpen = RedpenRuby.check(config_file, target_file)
+redpen = RedpenRuby.check(config_file, target_file, format: 'markdown')
 
 if redpen.valid?
   puts 'Ok, Valid!'
